@@ -1,22 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="var" path="M2_REPO/org/testng/testng/6.8/testng-6.8.jar" sourcepath="M2_REPO/org/testng/testng/6.8/testng-6.8-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/junit/junit/4.10/junit-4.10.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/beust/jcommander/1.27/jcommander-1.27.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/rest-assured/rest-assured/3.0.5/rest-assured-3.0.5.jar" sourcepath="M2_REPO/io/rest-assured/rest-assured/3.0.5/rest-assured-3.0.5-sources.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/codehaus/groovy/groovy/2.4.9/groovy-2.4.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/codehaus/groovy/groovy-xml/2.4.9/groovy-xml-2.4.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpcore/4.3/httpcore-4.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.9/commons-codec-1.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpmime/4.5.1/httpmime-4.5.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/rest-assured/json-path/3.0.5/json-path-3.0.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/codehaus/groovy/groovy-json/2.4.9/groovy-json-2.4.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/rest-assured/rest-assured-common/3.0.5/rest-assured-common-3.0.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/rest-assured/xml-path/3.0.5/xml-path-3.0.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-full/4.3.2/MetaModel-full-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-core/4.3.2/MetaModel-core-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-pojo/4.3.2/MetaModel-pojo-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-csv/4.3.2/MetaModel-csv-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sf/opencsv/opencsv/2.1/opencsv-2.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-fixedwidth/4.3.2/MetaModel-fixedwidth-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-mongodb/4.3.2/MetaModel-mongodb-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/mongodb/mongo-java-driver/2.9.1/mongo-java-driver-2.9.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-json/4.3.2/MetaModel-json-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.4.1.1/jackson-core-2.4.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.4.1.3/jackson-databind-2.4.1.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.4.0/jackson-annotations-2.4.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-salesforce/4.3.2/MetaModel-salesforce-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/force/api/force-partner-api/24.0.0/force-partner-api-24.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/force/api/force-wsc/24.0.0/force-wsc-24.0.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-sugarcrm/4.3.2/MetaModel-sugarcrm-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-excel/4.3.2/MetaModel-excel-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/poi/poi-ooxml/3.9/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/poi/poi/3.9/poi-3.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/poi/poi-ooxml-schemas/3.9/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-jdbc/4.3.2/MetaModel-jdbc-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-pool/commons-pool/1.6/commons-pool-1.6.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-couchdb/4.3.2/MetaModel-couchdb-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/ektorp/org.ektorp/1.4.2/org.ektorp-1.4.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient-cache/4.3/httpclient-cache-4.3.jar"/>
+	<classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.4/commons-io-2.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/slf4j/jcl-over-slf4j/1.6.4/jcl-over-slf4j-1.6.4.jar"/>
+	<classpathentry kind="var" path="M2_REPO/net/sourceforge/findbugs/annotations/1.3.2/annotations-1.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-openoffice/4.3.2/MetaModel-openoffice-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/hsqldb/hsqldb/1.8.0.10/hsqldb-1.8.0.10.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-xml/4.3.2/MetaModel-xml-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-elasticsearch/4.3.2/MetaModel-elasticsearch-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/elasticsearch/elasticsearch/1.3.2/elasticsearch-1.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-core/4.9.0/lucene-core-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-analyzers-common/4.9.0/lucene-analyzers-common-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-codecs/4.9.0/lucene-codecs-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-queries/4.9.0/lucene-queries-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-memory/4.9.0/lucene-memory-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-highlighter/4.9.0/lucene-highlighter-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-queryparser/4.9.0/lucene-queryparser-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-sandbox/4.9.0/lucene-sandbox-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-suggest/4.9.0/lucene-suggest-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-misc/4.9.0/lucene-misc-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-join/4.9.0/lucene-join-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-grouping/4.9.0/lucene-grouping-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-spatial/4.9.0/lucene-spatial-4.9.0.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/ow2/asm/asm/4.1/asm-4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/org/apache/metamodel/MetaModel-cassandra/4.3.2/MetaModel-cassandra-4.3.2.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/datastax/cassandra/cassandra-driver-core/2.1.1/cassandra-driver-core-2.1.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/io/netty/netty/3.9.0.Final/netty-3.9.0.Final.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/google/guava/guava/16.0.1/guava-16.0.1.jar"/>
+	<classpathentry kind="var" path="M2_REPO/com/codahale/metrics/metrics-core/3.0.2/metrics-core-3.0.2.jar"/>
 	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>

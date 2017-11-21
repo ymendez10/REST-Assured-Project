@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Resources REST Project Test Suite">
+	<test name="Resources Tests">
+		<classes>
+			<class name="com.automation.rest.assured.test.ResourcesRESTTest" />
+			<class name="com.automation.rest.assured.test.ResourcesPOSTTest" />
+		</classes>
+	</test>
+</suite>
