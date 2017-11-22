@@ -7,19 +7,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.apache.metamodel.query.SelectItem;
+import org.ektorp.http.HttpStatus;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.automation.rest.assured.util.Data;
-import com.google.common.base.Joiner;
 
-public class ResourcesPOSTTest extends FunctionalTest {
+public class ResourcesPOSTTest extends FunctionalBaseTest {
 	
 	private static File csvFile = new File("src/test/resources/Test.csv");
 
 	@Test
 	public void makeSureThatJsonpPlaceholderSiteIsUp() {
-		given().when().get().then().assertThat().statusCode(200);
+		given().when().get().then().assertThat().statusCode(HttpStatus.OK);
 	}
 
 	@Test(dependsOnMethods = "makeSureThatJsonpPlaceholderSiteIsUp", enabled=false)
@@ -35,20 +35,17 @@ public class ResourcesPOSTTest extends FunctionalTest {
         .contentType("application/json")
         .body(comment)
         .when().post("/posts")
-        .then().assertThat().statusCode(201);
+        .then().assertThat().statusCode(HttpStatus.CREATED);
 	}
 	
 	@Test(dependsOnMethods = "makeSureThatJsonpPlaceholderSiteIsUp", dataProvider = "csvDataProvider", enabled=true)
 	public void makeSureThatCommentsArePostedUsingDataProvider(SelectItem[] cols, Object[] data) {
 		
-		String row = Joiner.on("|").join( data );
-
-		  given()
+		given()
 	        .contentType("application/json")
-	        .body(Data.getCommentMapFromString(row, "|"))
+	        .body(Data.getCommentMapFromData(data))
 	        .when().post("/posts")
-	        .body().prettyPrint();
-	        //.then().assertThat().statusCode(201);
+	        .then().assertThat().statusCode(HttpStatus.CREATED);
 	}
 	
 	@DataProvider( name = "csvDataProvider" ) 

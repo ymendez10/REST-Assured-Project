@@ -1,96 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="1" total="2" passed="0">
+<testng-results skipped="0" failed="0" total="14" passed="14">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6512" started-at="2017-11-21T18:52:04Z" finished-at="2017-11-21T18:52:11Z">
+  <suite name="Resources REST Project Test Suite" duration-ms="5232" started-at="2017-11-22T01:15:27Z" finished-at="2017-11-22T01:15:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6512" started-at="2017-11-21T18:52:04Z" finished-at="2017-11-21T18:52:11Z">
+    <test name="Resources Tests" duration-ms="5232" started-at="2017-11-22T01:15:27Z" finished-at="2017-11-22T01:15:32Z">
       <class name="com.automation.rest.assured.test.ResourcesPOSTTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@1ce92674]" name="setup" is-config="true" duration-ms="240" started-at="2017-11-21T12:52:04Z" finished-at="2017-11-21T12:52:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="makeSureThatJsonpPlaceholderSiteIsUp()[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@1ce92674]" name="makeSureThatJsonpPlaceholderSiteIsUp" duration-ms="6259" started-at="2017-11-21T12:52:04Z" finished-at="2017-11-21T12:52:11Z">
-          <exception class="java.lang.NoSuchMethodError">
-            <message>
-              <![CDATA[org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V
-	at io.restassured.internal.util.MatcherErrorMessageBuilder.buildError(MatcherErrorMessageBuilder.java:19)
-	at io.restassured.internal.util.MatcherErrorMessageBuilder$buildError.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validateStatusCodeAndStatusLine(ResponseSpecificationImpl.groovy:536)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:449)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
-	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
-	at com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp(ResourcesPOSTTest.java:22)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+        <test-method status="PASS" signature="makeSureThatJsonpPlaceholderSiteIsUp()[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@31a5c39e]" name="makeSureThatJsonpPlaceholderSiteIsUp" duration-ms="150" started-at="2017-11-21T19:15:30Z" finished-at="2017-11-21T19:15:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- makeSureThatJsonpPlaceholderSiteIsUp -->
-        <test-method status="SKIP" signature="makeSureThatCommentsArePostedUsingDataProvider([Lorg.apache.metamodel.query.SelectItem;, [Ljava.lang.Object;)[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@1ce92674]" name="makeSureThatCommentsArePostedUsingDataProvider" duration-ms="1" started-at="2017-11-21T12:52:11Z" data-provider="csvDataProvider" depends-on-methods="com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp" finished-at="2017-11-21T12:52:11Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@31a5c39e]" name="setup" is-config="true" duration-ms="0" started-at="2017-11-21T19:15:30Z" finished-at="2017-11-21T19:15:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="makeSureThatCommentsArePostedUsingDataProvider([Lorg.apache.metamodel.query.SelectItem;, [Ljava.lang.Object;)[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@31a5c39e]" name="makeSureThatCommentsArePostedUsingDataProvider" duration-ms="539" started-at="2017-11-21T19:15:30Z" data-provider="csvDataProvider" depends-on-methods="com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp" finished-at="2017-11-21T19:15:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lorg.apache.metamodel.query.SelectItem;@4bbb49b0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@f096f37]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatCommentsArePostedUsingDataProvider -->
+        <test-method status="PASS" signature="makeSureThatCommentsArePostedUsingDataProvider([Lorg.apache.metamodel.query.SelectItem;, [Ljava.lang.Object;)[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@31a5c39e]" name="makeSureThatCommentsArePostedUsingDataProvider" duration-ms="277" started-at="2017-11-21T19:15:31Z" data-provider="csvDataProvider" depends-on-methods="com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp" finished-at="2017-11-21T19:15:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lorg.apache.metamodel.query.SelectItem;@4bbb49b0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3effd4f3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatCommentsArePostedUsingDataProvider -->
+        <test-method status="PASS" signature="makeSureThatCommentsArePostedUsingDataProvider([Lorg.apache.metamodel.query.SelectItem;, [Ljava.lang.Object;)[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@31a5c39e]" name="makeSureThatCommentsArePostedUsingDataProvider" duration-ms="327" started-at="2017-11-21T19:15:31Z" data-provider="csvDataProvider" depends-on-methods="com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp" finished-at="2017-11-21T19:15:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lorg.apache.metamodel.query.SelectItem;@4bbb49b0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@41f4fe5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatCommentsArePostedUsingDataProvider -->
+        <test-method status="PASS" signature="makeSureThatCommentsArePostedUsingDataProvider([Lorg.apache.metamodel.query.SelectItem;, [Ljava.lang.Object;)[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@31a5c39e]" name="makeSureThatCommentsArePostedUsingDataProvider" duration-ms="381" started-at="2017-11-21T19:15:31Z" data-provider="csvDataProvider" depends-on-methods="com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp" finished-at="2017-11-21T19:15:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lorg.apache.metamodel.query.SelectItem;@4bbb49b0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@15f8701f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatCommentsArePostedUsingDataProvider -->
+        <test-method status="PASS" signature="makeSureThatCommentsArePostedUsingDataProvider([Lorg.apache.metamodel.query.SelectItem;, [Ljava.lang.Object;)[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@31a5c39e]" name="makeSureThatCommentsArePostedUsingDataProvider" duration-ms="388" started-at="2017-11-21T19:15:32Z" data-provider="csvDataProvider" depends-on-methods="com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp" finished-at="2017-11-21T19:15:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lorg.apache.metamodel.query.SelectItem;@4bbb49b0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@514cd540]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatCommentsArePostedUsingDataProvider -->
+        <test-method status="PASS" signature="makeSureThatCommentsArePostedUsingDataProvider([Lorg.apache.metamodel.query.SelectItem;, [Ljava.lang.Object;)[pri:0, instance:com.automation.rest.assured.test.ResourcesPOSTTest@31a5c39e]" name="makeSureThatCommentsArePostedUsingDataProvider" duration-ms="274" started-at="2017-11-21T19:15:32Z" data-provider="csvDataProvider" depends-on-methods="com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp" finished-at="2017-11-21T19:15:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Lorg.apache.metamodel.query.SelectItem;@4bbb49b0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@11d4dbd6]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- makeSureThatCommentsArePostedUsingDataProvider -->
       </class> <!-- com.automation.rest.assured.test.ResourcesPOSTTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.automation.rest.assured.test.ResourcesRESTTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.automation.rest.assured.test.ResourcesRESTTest@4566e5bd]" name="setup" is-config="true" duration-ms="259" started-at="2017-11-21T19:15:27Z" finished-at="2017-11-21T19:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="makeSureThatJsonpPlaceholderSiteIsUp()[pri:0, instance:com.automation.rest.assured.test.ResourcesRESTTest@4566e5bd]" name="makeSureThatJsonpPlaceholderSiteIsUp" duration-ms="991" started-at="2017-11-21T19:15:28Z" finished-at="2017-11-21T19:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatJsonpPlaceholderSiteIsUp -->
+        <test-method status="PASS" signature="makeSureThatCommentsAreAvailable()[pri:0, instance:com.automation.rest.assured.test.ResourcesRESTTest@4566e5bd]" name="makeSureThatCommentsAreAvailable" duration-ms="228" started-at="2017-11-21T19:15:29Z" depends-on-methods="com.automation.rest.assured.test.ResourcesRESTTest.makeSureThatJsonpPlaceholderSiteIsUp" finished-at="2017-11-21T19:15:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatCommentsAreAvailable -->
+        <test-method status="PASS" signature="makeSureHeaderIsCorrect()[pri:0, instance:com.automation.rest.assured.test.ResourcesRESTTest@4566e5bd]" name="makeSureHeaderIsCorrect" duration-ms="261" started-at="2017-11-21T19:15:29Z" depends-on-methods="com.automation.rest.assured.test.ResourcesRESTTest.makeSureThatCommentsAreAvailable" finished-at="2017-11-21T19:15:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureHeaderIsCorrect -->
+        <test-method status="PASS" signature="makeSureNumberOfComments()[pri:0, instance:com.automation.rest.assured.test.ResourcesRESTTest@4566e5bd]" name="makeSureNumberOfComments" duration-ms="526" started-at="2017-11-21T19:15:29Z" depends-on-methods="com.automation.rest.assured.test.ResourcesRESTTest.makeSureThatCommentsAreAvailable" finished-at="2017-11-21T19:15:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureNumberOfComments -->
+        <test-method status="PASS" signature="makeSureThatCommentByIdIsRetrieved()[pri:0, instance:com.automation.rest.assured.test.ResourcesRESTTest@4566e5bd]" name="makeSureThatCommentByIdIsRetrieved" duration-ms="159" started-at="2017-11-21T19:15:30Z" depends-on-methods="com.automation.rest.assured.test.ResourcesRESTTest.makeSureThatCommentsAreAvailable" finished-at="2017-11-21T19:15:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatCommentByIdIsRetrieved -->
+        <test-method status="PASS" signature="makeSureThatCommentRetrievedByIdContainsAtSign()[pri:0, instance:com.automation.rest.assured.test.ResourcesRESTTest@4566e5bd]" name="makeSureThatCommentRetrievedByIdContainsAtSign" duration-ms="158" started-at="2017-11-21T19:15:30Z" depends-on-methods="com.automation.rest.assured.test.ResourcesRESTTest.makeSureThatCommentsAreAvailable" finished-at="2017-11-21T19:15:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatCommentRetrievedByIdContainsAtSign -->
+        <test-method status="PASS" signature="makeSureThatEmailIsNotEmpty()[pri:0, instance:com.automation.rest.assured.test.ResourcesRESTTest@4566e5bd]" name="makeSureThatEmailIsNotEmpty" duration-ms="254" started-at="2017-11-21T19:15:30Z" depends-on-methods="com.automation.rest.assured.test.ResourcesRESTTest.makeSureThatCommentsAreAvailable" finished-at="2017-11-21T19:15:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makeSureThatEmailIsNotEmpty -->
+      </class> <!-- com.automation.rest.assured.test.ResourcesRESTTest -->
+    </test> <!-- Resources Tests -->
+  </suite> <!-- Resources REST Project Test Suite -->
 </testng-results>

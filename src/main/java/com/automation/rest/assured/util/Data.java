@@ -138,9 +138,8 @@ public class Data {
         }
 	}
 	
-	public static Map<String,String> getCommentMapFromString(String row,String joiner){
-		
-		String[] tmp = row.split(joiner);
+	public static Map<String,String> getCommentMapFromData(Object[] data){
+		 String[] tmp = Joiner.on("|").join( data ).split("\\|");
 		
 		Map<String,String> comment = new HashMap<>();
 		comment.put("userId", tmp[0]);

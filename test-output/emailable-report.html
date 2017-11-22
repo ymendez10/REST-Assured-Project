@@ -31,60 +31,77 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi_attn">1</td><td class="numi">6,5 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Resources Tests</td><td class="numi">14</td><td class="numi">14</td><td class="numi">0</td><td class="numi">0</td><td class="numi">5,2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">com.automation.rest.assured.test.ResourcesPOSTTest</td><td><a href="#m1"><b>makeSureThatJsonpPlaceholderSiteIsUp</b>  </a></td><td class="numi">1</td><td>1511290324785</td><td class="numi">6259</td></tr>
-<tr><th colspan="4">Default test &#8212; skipped</th></tr>
-<tr class="skippedodd"><td rowspan="1">com.automation.rest.assured.test.ResourcesPOSTTest</td><td><a href="#m2"><b>makeSureThatCommentsArePostedUsingDataProvider</b>  </a></td><td class="numi">1</td><td>1511290331048</td><td class="numi">1</td></tr>
+<tr><th colspan="4">Resources Tests &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="7">com.automation.rest.assured.test.ResourcesRESTTest</td><td><a href="#m1"><b>makeSureThatJsonpPlaceholderSiteIsUp</b>  </a></td><td class="numi">1</td><td>1511313328007</td><td class="numi">991</td></tr><tr class="passedodd"><td><a href="#m2"><b>makeSureThatCommentsAreAvailable</b>  </a></td><td class="numi">1</td><td>1511313329000</td><td class="numi">228</td></tr><tr class="passedodd"><td><a href="#m3"><b>makeSureHeaderIsCorrect</b>  </a></td><td class="numi">1</td><td>1511313329229</td><td class="numi">261</td></tr><tr class="passedodd"><td><a href="#m4"><b>makeSureNumberOfComments</b>  </a></td><td class="numi">1</td><td>1511313329491</td><td class="numi">526</td></tr><tr class="passedodd"><td><a href="#m5"><b>makeSureThatCommentByIdIsRetrieved</b>  </a></td><td class="numi">1</td><td>1511313330018</td><td class="numi">159</td></tr><tr class="passedodd"><td><a href="#m6"><b>makeSureThatCommentRetrievedByIdContainsAtSign</b>  </a></td><td class="numi">1</td><td>1511313330178</td><td class="numi">158</td></tr><tr class="passedodd"><td><a href="#m7"><b>makeSureThatEmailIsNotEmpty</b>  </a></td><td class="numi">1</td><td>1511313330337</td><td class="numi">254</td></tr>
+<tr class="passedeven"><td rowspan="7">com.automation.rest.assured.test.ResourcesPOSTTest</td><td><a href="#m8"><b>makeSureThatJsonpPlaceholderSiteIsUp</b>  </a></td><td class="numi">1</td><td>1511313330592</td><td class="numi">150</td></tr><tr class="passedeven"><td><a href="#m9"><b>makeSureThatCommentsArePostedUsingDataProvider</b>  </a></td><td class="numi">6</td><td>1511313330779</td><td class="numi">2191</td></tr><tr class="passedeven"><td><a href="#m10"><b>makeSureThatCommentsArePostedUsingDataProvider</b>  </a></td><td class="numi">6</td><td>1511313330779</td><td class="numi">2191</td></tr><tr class="passedeven"><td><a href="#m11"><b>makeSureThatCommentsArePostedUsingDataProvider</b>  </a></td><td class="numi">6</td><td>1511313330779</td><td class="numi">2191</td></tr><tr class="passedeven"><td><a href="#m12"><b>makeSureThatCommentsArePostedUsingDataProvider</b>  </a></td><td class="numi">6</td><td>1511313330779</td><td class="numi">2191</td></tr><tr class="passedeven"><td><a href="#m13"><b>makeSureThatCommentsArePostedUsingDataProvider</b>  </a></td><td class="numi">6</td><td>1511313330779</td><td class="numi">2191</td></tr><tr class="passedeven"><td><a href="#m14"><b>makeSureThatCommentsArePostedUsingDataProvider</b>  </a></td><td class="numi">6</td><td>1511313330779</td><td class="numi">2191</td></tr>
 </table>
-<h1>Default test</h1>
+<h1>Resources Tests</h1>
 <h2 id="m1">com.automation.rest.assured.test.ResourcesPOSTTest:makeSureThatJsonpPlaceholderSiteIsUp</h2>
-<div style="padding-left:3em">
-<p>org.hamcrest.Matcher.describeMismatch(Ljava/lang/Object;Lorg/hamcrest/Description;)V</p>
-io.restassured.internal.util.MatcherErrorMessageBuilder.buildError(MatcherErrorMessageBuilder.java:19)
-<br/>at io.restassured.internal.util.MatcherErrorMessageBuilder$buildError.call(Unknown Source)
-<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
-<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validateStatusCodeAndStatusLine(ResponseSpecificationImpl.groovy:536)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-<br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:449)
-<br/>at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
-<br/>at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:643)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-<br/>at java.lang.reflect.Method.invoke(Unknown Source)
-<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-<br/>at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-<br/>at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
-<br/>at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
-<br/>at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:52)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:154)
-<br/>at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-<br/>at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
-<br/>at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
-<br/>at com.automation.rest.assured.test.ResourcesPOSTTest.makeSureThatJsonpPlaceholderSiteIsUp(ResourcesPOSTTest.java:22)
-<br/>25 lines not shown
-</div>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">com.automation.rest.assured.test.ResourcesPOSTTest:makeSureThatCommentsArePostedUsingDataProvider</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[Test.csv.userId, Test.csv.id, Test.csv.title, Test.csv.body]</td>
+<td>[15, 1007, Test Fifth Comment, Sample Test]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">com.automation.rest.assured.test.ResourcesRESTTest:makeSureThatCommentsAreAvailable</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">com.automation.rest.assured.test.ResourcesPOSTTest:makeSureThatCommentsArePostedUsingDataProvider</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[Test.csv.userId, Test.csv.id, Test.csv.title, Test.csv.body]</td>
+<td>[10, 1005, Test Third Comment, Sample Test]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">com.automation.rest.assured.test.ResourcesPOSTTest:makeSureThatCommentsArePostedUsingDataProvider</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[Test.csv.userId, Test.csv.id, Test.csv.title, Test.csv.body]</td>
+<td>[10, 1004, Test Second Comment, Sample Test]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">com.automation.rest.assured.test.ResourcesRESTTest:makeSureThatCommentRetrievedByIdContainsAtSign</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">com.automation.rest.assured.test.ResourcesRESTTest:makeSureHeaderIsCorrect</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">com.automation.rest.assured.test.ResourcesRESTTest:makeSureThatJsonpPlaceholderSiteIsUp</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">com.automation.rest.assured.test.ResourcesPOSTTest:makeSureThatCommentsArePostedUsingDataProvider</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[Test.csv.userId, Test.csv.id, Test.csv.title, Test.csv.body]</td>
+<td>[10, 1003, Test First Comment, Sample Test]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">com.automation.rest.assured.test.ResourcesRESTTest:makeSureThatEmailIsNotEmpty</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">com.automation.rest.assured.test.ResourcesRESTTest:makeSureThatCommentByIdIsRetrieved</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">com.automation.rest.assured.test.ResourcesRESTTest:makeSureNumberOfComments</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">com.automation.rest.assured.test.ResourcesPOSTTest:makeSureThatCommentsArePostedUsingDataProvider</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[Test.csv.userId, Test.csv.id, Test.csv.title, Test.csv.body]</td>
+<td>[10, 1006, Test Fourth Comment, Sample Test]</td>
+</tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">com.automation.rest.assured.test.ResourcesPOSTTest:makeSureThatCommentsArePostedUsingDataProvider</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>[Test.csv.userId, Test.csv.id, Test.csv.title, Test.csv.body]</td>
+<td>[10, 1008, Test Sixth Comment, Sample Test]</td>
+</tr>
+</table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

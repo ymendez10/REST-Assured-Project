@@ -2,13 +2,16 @@ package com.automation.rest.assured.test;
 
 import org.testng.annotations.BeforeClass;
 
+import com.automation.rest.assured.util.PropertiesUtil;
 
 import io.restassured.RestAssured;
 
-public class FunctionalTest {
+public class FunctionalBaseTest {
+	
+	private PropertiesUtil properties;
 
 	@BeforeClass
-	public static void setup() {
+	public void setup() {
 //		String port = System.getProperty("server.port");
 //		if (port == null) {
 //			RestAssured.port = Integer.valueOf(8080);
@@ -21,10 +24,12 @@ public class FunctionalTest {
 //			basePath = "/comments";
 //		}
 //		RestAssured.basePath = basePath;
+		
+		properties = new PropertiesUtil(); 
 
-		String baseHost = System.getProperty("server.host");
+		String baseHost = System.getProperty("resources.rest.project.server.host");
 		if (baseHost == null) {
-			baseHost = "https://jsonplaceholder.typicode.com";
+			baseHost = properties.getProperty("resources.rest.project.server.host");
 		}
 		RestAssured.baseURI = baseHost;
 	}
